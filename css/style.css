@@ -399,6 +399,10 @@ body {
   background-color: #f6fafd;
 }
 
+.swal-button {
+  background-image: linear-gradient(to right, #fe985b 0%, #fe4fa7 100%);
+}
+
 .section-header {
   background: url(../background/Bitmap.jpg) no-repeat 50% 50%;
   background-size: cover;

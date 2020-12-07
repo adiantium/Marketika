@@ -28,19 +28,19 @@
                         Very professional and highly customizable sketch template with lots
                         of custom pages and useful features
                     </div>
-                    <div class="section-header-wrapper__form">
+                    <form  method="POST" action="http://localhost:3000/post" class="section-header-wrapper__form">
                         <div class="section-header-wrapper__form-input">
-                            <input type="text" placeholder="Your Name">
+                            <input required name="userName" type="text" placeholder="Your Name">
                         </div>
                         <div class="section-header-wrapper__form-input">
-                            <input type="email" placeholder="Your Email">
+                            <input  required name="userEmail" type="email" placeholder="Your Email">
                         </div>
-                        <div class="section-header-wrapper__form-button">
+                        <div data-success  class="section-header-wrapper__form-button">
                             <button class="active-button button-scale">
                                 Get started
                             </button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -160,7 +160,7 @@
             </div>
             <div class="section-price__box">
 
-                <div class="section-price__box__item ACTIVE">
+                <div data-number=0 class="section-price__box__item">
 
                     <div class="title">
                         FREE
@@ -175,12 +175,12 @@
                         et dolore magna
                         aliqua. Ut enim ad minim veniam.
                     </div>
-                    <div class="button button-scale">
-                        <a href="" class="active-button">Get Started</a>
+                    <div data-form class="button button-scale">
+                        <a href="" class="start-button ">Get Started</a>
                     </div>
                 </div>
 
-                <div class="section-price__box__item">
+                <div data-number=1  class="section-price__box__item">
                     <div class="title">
                         PREMIUM
                     </div>
@@ -194,7 +194,7 @@
                         et dolore magna
                         aliqua. Ut enim ad minim veniam.
                     </div>
-                    <div class="button button-scale">
+                    <div data-form class="button button-scale">
                         <a href="" class="start-button">Get Started</a>
                     </div>
                 </div>
@@ -214,7 +214,7 @@
                 dolore magna
                 aliqua. Ut enim ad minim veniam.
             </div>
-            <div class="section-free__button button-scale">
+            <div data-form class="section-free__button button-scale">
                 <a href="" class="start-button">Get Started</a>
             </div>
         </div>
@@ -246,9 +246,7 @@
     </section>
     <!-- footer -->
 
-
-
-
+    <script src="js/bundle.js"></script>
 </body>
 
 </html>

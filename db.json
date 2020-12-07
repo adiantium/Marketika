@@ -1,0 +1,39 @@
+{
+  "post": [
+    {
+      "userName": "Maxim",
+      "userEmail": "Maixm@ya.ru",
+      "id": 1
+    },
+    {
+      "userName": "das",
+      "userEmail": "dsa",
+      "id": 2
+    },
+    {
+      "userName": "das",
+      "userEmail": "dsa",
+      "id": 3
+    },
+    {
+      "userName": "unknown",
+      "userEmail": "asdas@mail.ru",
+      "id": 4
+    },
+    {
+      "userName": "unknown",
+      "userEmail": "dasdasd@gakjdads.ru",
+      "id": 5
+    },
+    {
+      "userName": "asd",
+      "userEmail": "asd",
+      "id": 6
+    },
+    {
+      "userName": "unknown",
+      "userEmail": "dasd@masdasd/ry",
+      "id": 7
+    }
+  ]
+}
