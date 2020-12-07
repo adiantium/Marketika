@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+<<<<<<< HEAD
     "axios": "^0.21.0",
     "es6-promise": "^4.2.8",
     "es6-promise-polyfill": "^1.2.0",
@@ -29,6 +30,12 @@
     "slick-carousel": "^1.8.1",
     "sweetalert": "^2.1.2",
     "tiny-slider": "^2.9.3"
+=======
+    "es6-promise": "^4.2.8",
+    "es6-promise-polyfill": "^1.2.0",
+    "nodelist-foreach-polyfill": "^1.2.0",
+    "sweetalert": "^2.1.2"
+>>>>>>> 973ae355c23a560415e4354de9f1ceaf84f163ab
   },
   "keywords": [],
   "repository": {
