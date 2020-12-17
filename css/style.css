@@ -399,6 +399,11 @@ body {
   background-color: #f6fafd;
 }
 
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
+
 .swal-button {
   background-image: linear-gradient(to right, #fe985b 0%, #fe4fa7 100%);
 }
