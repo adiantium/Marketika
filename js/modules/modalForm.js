@@ -12,7 +12,6 @@ const postData = async (url, data) => {
   });
 }
 
-
 function alertMessageSendError() {
   swal({
     title: "ERROR",
@@ -50,13 +49,12 @@ function modalForm() {
   getStartedSuccess.forEach(item => {
     item.addEventListener('click', (event) => {
       event.preventDefault();
-      if (headerFomInput[0].value || headerFomInput[1].value) {
+      if (headerFomInput[0].value && headerFomInput[1].value && headerFomInput[1].value.indexOf('@')>0) {
         const formData = new FormData(headerFom);
         const json = JSON.stringify(Object.fromEntries(formData.entries()));
-        console.log(JSON.stringify(json));
-        postData("http://localhost:3000/post", json)
+        console.log(json);
+        postData("https://jsonplaceholder.typicode.com/posts", json)
           .then(data => {
-            console.log(data);
             headerFom.reset();
             alertMessageSuccess();
           }).catch(() => {
@@ -70,7 +68,6 @@ function modalForm() {
     });
   });
 
-
   getStartedForm.forEach(item => {
     item.addEventListener('click', (event) => {
       event.preventDefault();
@@ -79,18 +76,19 @@ function modalForm() {
             element: "input",
             attributes: {
               placeholder: "You Email",
-              type: "Email",
+              type: "email",
             },
           },
         })
         .then((result) => {
-          if (result) {
-            axios.post('http://localhost:3000/post', {
+          if (result && result.indexOf('@') > 0) {
+            axios.post('https://jsonplaceholder.typicode.com/posts', {
                 userName: 'unknown',
                 userEmail: result
               })
               .then(function (response) {
-                alertMessageSuccess();
+                console.log(`userEmail:${result}`);
+                alertMessageSuccess()
               })
               .catch(function (error) {
                 alertMessageSendError();
